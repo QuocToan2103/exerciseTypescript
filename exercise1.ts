@@ -1,13 +1,10 @@
 //hàm getfullname
-function getFullName(): String{
-    
-    let firsName: String = "Nguyen";
-    let lastName: String = "Quoc Toan";
-    //trả về 
-    return `${firsName} ${lastName}`;
+function getFullName(firsName: String, lastName:String): void{
+    //in ra
+    console.log(`full Name: ${firsName} ${lastName}`);
 }
 
 //hàm getfullname được gán cho biến fullname 
-let fullName: String = getFullName();
-//in ra
-console.log(fullName);
+const firsName: string = prompt(`nhập họ: `)!;
+const lastName: string = prompt(`nhập tên : `)!;
+getFullName(firsName, lastName);
